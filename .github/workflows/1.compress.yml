@@ -10,7 +10,7 @@ jobs:
       env:
         EMAIL: ${{ secrets.GH_EMAIL }}
         NAME: ${{ secrets.GH_USERNAME }}
-        TOKEN: ${{ secrets.TOKEN }}
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       steps:
       - name: Compress files
